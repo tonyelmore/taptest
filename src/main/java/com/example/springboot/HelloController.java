@@ -8,7 +8,7 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Greetings from Spring Boot + Tanzu!  This content has change in order to test the lifecycle.  Local testing should catch errors, but what if it does not?.";
+		return "Greetings from Spring Boot + Tanzu!  Changed supply chain, will it fail without defining tekton pipeline?";
 	}
 
 }
