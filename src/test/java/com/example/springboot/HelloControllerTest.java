@@ -21,11 +21,13 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        assertEquals("Greetings from Spring Boot + Tanzu!", controller.index());
+        String expected = "Greetings from Spring Boot + Tanzu!  This content has change in order to test the lifecycle.  I expect the test to fail and want to see how it is shown to the developer.";
+
+        assertEquals(expected, controller.index());
 
         mockMvc
             .perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("Greetings from Spring Boot + Tanzu!"));
+            .andExpect(content().string(expected));
     }
 }
