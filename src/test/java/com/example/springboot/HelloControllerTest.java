@@ -21,7 +21,7 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        String expected = "Greetings from Spring Boot + Tanzu!  This content has change in order to test the lifecycle.  I expect the test to fail and want to see how it is shown to the developer.";
+        String expected = "Greetings from Spring Boot + Tanzu + TAP!";
 
         assertEquals(expected, controller.index());
 

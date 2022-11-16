@@ -8,7 +8,7 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Greetings from Spring Boot + Tanzu!  Changed supply chain, will it fail without defining tekton pipeline?  Now have the pipeline - expecting failure, but where?  And does the pipeline even kickoff on source code change?";
+		return "Greetings from Spring Boot + Tanzu + TAP!";
 	}
 
 }
