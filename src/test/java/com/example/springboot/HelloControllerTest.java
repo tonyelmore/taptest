@@ -21,7 +21,7 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        String expected = "Greetings from Spring Boot + Tanzu + TAP + Tony!";
+        String expected = "Greetings from Spring Boot + Tanzu + TAP.";
 
         assertEquals(expected, controller.index());
 
