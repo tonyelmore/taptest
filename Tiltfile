@@ -1,6 +1,8 @@
 SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='harbor-repo.vmware.com/telmore/taptest-source')
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
-NAMESPACE = os.getenv("NAMESPACE", default='default')
+NAMESPACE = os.getenv("NAMESPACE", default='telmore')
+
+allow_k8s_contexts('workload01-admin@workload01')
 
 k8s_custom_deploy(
     'taptest',
